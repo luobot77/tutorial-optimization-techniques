@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Button from './components/UI/Button';
+import DemoOutput from './components/Demo/DemoOutput';
 import styles from './App.module.css';
 
 const App = () => {
@@ -17,7 +18,7 @@ const App = () => {
       <Button onClick={handleToggleParagraph} disabled={false}>
         Toggle Paragraph
       </Button>
-      {isParagraphShown && <p>This is new!</p>}
+      <DemoOutput isParagraphShown={isParagraphShown} />
     </div>
   );
 };
