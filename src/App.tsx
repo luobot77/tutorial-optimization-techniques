@@ -18,7 +18,7 @@ const App = () => {
       <Button onClick={handleToggleParagraph} disabled={false}>
         Toggle Paragraph
       </Button>
-      <DemoOutput isParagraphShown={isParagraphShown} />
+      <DemoOutput isParagraphShown={false} />
     </div>
   );
 };

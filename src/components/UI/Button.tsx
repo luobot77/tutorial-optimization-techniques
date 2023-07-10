@@ -9,6 +9,8 @@ type ButtonProps = {
 };
 
 const Button = ({ type, className, onClick, disabled, children }: ButtonProps) => {
+  console.log('Button Component Rendered');
+
   return (
     <button
       type={type ?? 'button'}
